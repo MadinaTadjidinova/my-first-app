@@ -4,6 +4,8 @@ import ByeWorld from "./components/ByeWorld"
 import Chunga from "./components/Chunga"
 import Hochu from "./components/Hochu";
 import Book from "./components/Book";
+import Sing from "./components/Sing";
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +17,8 @@ function App() {
       <Chunga />
       <Hochu v="more" />
       <Hochu v="kosmos" />
-      <Book auther="Chingiz Aitmatov" nam="Jamilia"/>
+      <Book name="Jamilia" auther="Chingiz Aitmatov"/> 
+      <Sing firstname="Selena" secondname="Gomes" />
     </div>
   );
 }
