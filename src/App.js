@@ -1,5 +1,6 @@
 import React from "react";
 import HelloWorld from "./components/HelloWorld";
+import ByeWorld from "./components/ByeWorld"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <HelloWorld />
       <HelloWorld />
       <HelloWorld />
+      <ByeWorld />
     </div>
   );
 }
