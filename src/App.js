@@ -22,6 +22,7 @@ function App() {
       <Sing firstname="Selena" secondname="Gomes" />
       <Length string="Example string"/>
       <Length string="Hello world"/>
+      <Uppercase>hello world</Uppercase>
     </div>
   );
 }
