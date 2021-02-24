@@ -6,7 +6,7 @@ import Hochu from "./components/Hochu";
 import Book from "./components/Book";
 import Sing from "./components/Sing";
 import Length from "./components/Length";
-
+import Uppercase from "./components/Uppercase";
 function App() {
   return (
     <div className="App">
