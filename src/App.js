@@ -8,6 +8,10 @@ import Sing from "./components/Sing";
 import Length from "./components/Length";
 import Uppercase from "./components/Uppercase";
 import Lowercase from "./components/Lowercase";
+import Age from "./components/Age";
+import Year from "./components/Year";
+import Round from "./components/Round";
+import Power from "./components/Power";
 
 function App() {
   return (
@@ -26,6 +30,12 @@ function App() {
       <Length string="Hello world"/>
       <Uppercase>hello world</Uppercase>
       <Lowercase> HELLO WORLD</Lowercase>
+
+      <Age year={2003}/>
+      <Year age={18}/>
+      <Round number={7.7}/>
+      <Power number={4.6}/>
+      <Power number={6} to={2}/>
     </div>
   );
 }
