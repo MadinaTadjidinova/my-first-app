@@ -7,6 +7,8 @@ import Book from "./components/Book";
 import Sing from "./components/Sing";
 import Length from "./components/Length";
 import Uppercase from "./components/Uppercase";
+import Lowercase from "./components/Lowercase";
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +25,7 @@ function App() {
       <Length string="Example string"/>
       <Length string="Hello world"/>
       <Uppercase>hello world</Uppercase>
+      <Lowercase> HELLO WORLD</Lowercase>
     </div>
   );
 }

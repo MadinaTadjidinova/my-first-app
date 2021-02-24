@@ -1,7 +1,7 @@
 import React from "react";
 
 function Uppercase(props){
-    return <div> {props.children} </div>
+    return <div> {props.children.toUpperCase()} </div>
     
     
 }
