@@ -5,6 +5,7 @@ import Chunga from "./components/Chunga"
 import Hochu from "./components/Hochu";
 import Book from "./components/Book";
 import Sing from "./components/Sing";
+import Length from "./components/Length";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <Hochu v="kosmos" />
       <Book name="Jamilia" auther="Chingiz Aitmatov"/> 
       <Sing firstname="Selena" secondname="Gomes" />
+      <Length string="Example string"/>
+      <Length string="Hello world"/>
     </div>
   );
 }
