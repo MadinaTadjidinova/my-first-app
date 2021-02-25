@@ -1,7 +1,7 @@
 import React from "react";
 import HelloWorld from "./components/HelloWorld";
-import ByeWorld from "./components/ByeWorld"
-import Chunga from "./components/Chunga"
+import ByeWorld from "./components/ByeWorld";
+import Chunga from "./components/Chunga";
 import Hochu from "./components/Hochu";
 import Book from "./components/Book";
 import Sing from "./components/Sing";
@@ -26,24 +26,24 @@ function App() {
       <Chunga />
       <Hochu v="more" />
       <Hochu v="kosmos" />
-      <Book name="Jamilia" auther="Chingiz Aitmatov"/> 
+      <Book name="Jamilia" auther="Chingiz Aitmatov" />
       <Sing firstname="Selena" secondname="Gomes" />
-      <Length string="Example string"/>
-      <Length string="Hello world"/>
+      <Length string="Example string" />
+      <Length string="Hello world" />
       <Uppercase>hello world</Uppercase>
       <Lowercase> HELLO WORLD</Lowercase>
 
-      <Age year={2003}/>
-      <Year age={18}/>
-      <Round number={7.7}/>
-      <Power number={4.6}/>
-      <Power number={6} to={2}/>
+      <Age year={2003} />
+      <Year age={18} />
+      <Round number={7.7} />
+      <Power number={4.6} />
+      <Power number={6} to={2} />
 
-     <Switch on={false}/>
-     <Switch on={true}/>
+      <Switch on={false} />
+      <Switch on={true} />
 
-     <Water frozen={true}/>
-     <Water frozen={false}/>
+      <Water frozen={true} />
+      <Water frozen={false} />
     </div>
   );
 }
