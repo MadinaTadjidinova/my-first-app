@@ -14,6 +14,9 @@ import Round from "./components/Round";
 import Power from "./components/Power";
 import Switch from "./components/Switch";
 import Water from "./components/Water";
+import Sum from "./home_work/Sum";
+import RandomNumber from "./home_work/RandomNumber";
+
 
 function App() {
   return (
@@ -44,6 +47,12 @@ function App() {
 
       <Water frozen={true} />
       <Water frozen={false} />
+
+
+      <Sum a={5} b={4}/>
+
+      <RandomNumber min={5} max={10} />
+
     </div>
   );
 }
