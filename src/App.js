@@ -16,6 +16,7 @@ import Switch from "./components/Switch";
 import Water from "./components/Water";
 import Sum from "./home_work/Sum";
 import RandomNumber from "./home_work/RandomNumber";
+import BiggerNumber from "./home_work/BiggerNumber";
 
 
 function App() {
@@ -52,6 +53,9 @@ function App() {
       <Sum a={5} b={4}/>
 
       <RandomNumber min={5} max={10} />
+
+      <BiggerNumber a={5} b={4} />
+      <BiggerNumber a={5} b={8} />
 
     </div>
   );
