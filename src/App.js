@@ -17,7 +17,7 @@ import Water from "./components/Water";
 import Sum from "./home_work/Sum";
 import RandomNumber from "./home_work/RandomNumber";
 import BiggerNumber from "./home_work/BiggerNumber";
-
+// import List from "./home_work/List";
 
 function App() {
   return (
@@ -55,7 +55,9 @@ function App() {
       <RandomNumber min={5} max={10} />
 
       <BiggerNumber a={5} b={4} />
-      <BiggerNumber a={5} b={8} />
+      {/* <BiggerNumber a={5} b={8} /> */}
+    
+      {/* <List items={[Apple, Limon]} /> */}
 
     </div>
   );
