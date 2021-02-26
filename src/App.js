@@ -1,9 +1,11 @@
 
 import React from "react";
-import List from "./home_work/List";
-import Ol from "./home_work/Ol";
-import Square from "./home_work/Square";
-import Welth from "./home_work/Welth";
+import List from "./react2/List";
+import Ol from "./react2/Ol";
+import Square from "./react2/Square";
+import Wealth from "./react2/Wealth";
+import Table from "./react2/Table";
+import Root from "./react2/Root";
 
 function App() {
   let richPeople = ["Elon Musk", "Jeff Besos"]
@@ -12,6 +14,7 @@ function App() {
     {name: "Jeff Besos ", wealth: 7679867678},
     {name: "Bill Gates", wealth: 76978979},
   ]
+  let numbers = [4, 6, 1, 9, 2]
 
   return (
     <div className="App">
@@ -20,8 +23,13 @@ function App() {
       <Square items={richPeople} />
 
       <ul>
-      <Welth items={peopleWealth} />
+      <Wealth items={peopleWealth} />
       </ul>
+
+     
+      <Table items={peopleWealth} />
+   
+      <Root items={numbers} />
     </div>
   );
 }

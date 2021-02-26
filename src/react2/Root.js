@@ -1,5 +1,3 @@
-
-
 const Root = ({ items }) => {
     let list = items.map(item => {
         return <li>{item} - {Math.sqrt(item)}</li>
