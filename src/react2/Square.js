@@ -1,7 +1,4 @@
-
-
-
-  const Square = ({ items }) => {
+ const Square = ({ items }) => {
       let list = items.map(item => {
           return <li>{item}</li>
       })
