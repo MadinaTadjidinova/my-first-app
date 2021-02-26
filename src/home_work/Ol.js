@@ -1,12 +1,11 @@
-
-const List = (props) => {
-    let list = []
+const OL = (props) => {
+    let list = [];
     for(let i = 0; i < props.items.length; i++){
         list.push(<li>{props.items[i]}</li>)
     }
-    return <ul>
+    return <ol>
         {list}
-    </ul>
+    </ol>
 }
  
-  export default List;
+  export default OL;
