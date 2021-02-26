@@ -1,8 +1,9 @@
 const OL = (props) => {
     let list = [];
-    for(let i = 0; i < props.items.length; i++){
-        list.push(<li>{props.items[i]}</li>)
-    }
+    props.items.forEach(item => {
+        list.push(<li>{item}</li>)
+    })
+    
     return <ol>
         {list}
     </ol>
