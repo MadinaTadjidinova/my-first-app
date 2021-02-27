@@ -6,6 +6,8 @@ import Square from "./react2/Square";
 import Wealth from "./react2/Wealth";
 import Table from "./react2/Table";
 import Root from "./react2/Root";
+import UpperCaseList from "./react2/UpperCaseList";
+
 
 function App() {
   let richPeople = ["Elon Musk", "Jeff Besos"]
@@ -30,6 +32,8 @@ function App() {
       <Table items={peopleWealth} />
    
       <Root items={numbers} />
+
+      <UpperCaseList items={richPeople} />
     </div>
   );
 }
