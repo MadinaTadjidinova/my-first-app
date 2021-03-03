@@ -7,6 +7,7 @@ import Name from "./01.03.2021/Name";
 import Text from "./01.03.2021/Text";
 
 import Form from "./home_work/Form";
+import List from "./01.03.2021/List";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -30,6 +31,8 @@ function App() {
           </ul>
         ))}
       </div>
+
+      <List />
     </div>
   );
 }
