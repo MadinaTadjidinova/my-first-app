@@ -1,17 +1,17 @@
 import { useState } from "react"
 
 function TodoList() {
-    let [list, setList] = useState(["Apple"]);
+    let [list, setList] = useState([""]);
     let [li , setLi] = useState('')
     return (
         <div className="TodoList">
-            <ul><li>{list}</li></ul>
+            <ul><li>{li}</li></ul>
             <input 
             type="text" 
             placeholder="Enter Text"
             />
 
-            <button>Add</button>
+            <button onClick={() => setList}>Add</button>
         </div>
     )
 }

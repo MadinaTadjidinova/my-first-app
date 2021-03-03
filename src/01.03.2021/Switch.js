@@ -5,8 +5,8 @@ function Switch() {
 
     return (
         <div className="Switch">
-            <h1>On</h1>
-            <button onClick={() => setState(!state)}>Toggle</button>
+            <h1 onClick={() => setState(state = !state ? 'On' : 'Off')}>On</h1>
+            <button onClick={() => setState(state)}>Toggle</button>
         </div>
     )
     }
