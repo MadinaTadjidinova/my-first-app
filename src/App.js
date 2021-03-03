@@ -19,27 +19,19 @@ function App() {
       <hr />
       <Text />
       <hr />
-  
+
       <Form
-      onSubmit={text => setTodos([{ text, complete: false }, ...todos])}
-    />
-    <div>
-      {todos.map(({ text }) => (
-        <ul>
-          <li
-          key={text}
-        >
-          {text}
-          </li>
+        onSubmit={(text) => setTodos([{ text, complete: false }, ...todos])}
+      />
+      <div>
+        {todos.map(({ text }) => (
+          <ul>
+            <li>{text}</li>
           </ul>
-      ))}
+        ))}
+      </div>
     </div>
-   
-  </div>
-);
-};
-  
+  );
+}
 
 export default App;
-
-
