@@ -9,6 +9,9 @@ import Text from "./01.03.2021/Text";
 import Form from "./home_work/Form";
 import List from "./01.03.2021/List";
 
+import InputLength from "./03.03.2021/InputLength";
+import Color from "./03.03.2021/Color";
+
 function App() {
   const [todos, setTodos] = useState([]);
 
@@ -32,7 +35,13 @@ function App() {
         ))}
       </div>
 
-      <List />
+
+      <List/>
+      <hr />
+      <hr />
+      <hr />
+      <InputLength value="test" />
+      <Color />
     </div>
   );
 }
