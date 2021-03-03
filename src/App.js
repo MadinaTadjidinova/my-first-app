@@ -11,6 +11,7 @@ import List from "./01.03.2021/List";
 
 import InputLength from "./03.03.2021/InputLength";
 import Color from "./03.03.2021/Color";
+import InputRange from "./03.03.2021/InputRange";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -40,8 +41,14 @@ function App() {
       <hr />
       <hr />
       <hr />
+      <h3>Example 1</h3>
       <InputLength value="test" />
+
+      <h3>Example 2</h3>
       <Color />
+      
+      <h3>Example 3</h3>
+      <InputRange min={0} max={10} value={3}/>
     </div>
   );
 }
