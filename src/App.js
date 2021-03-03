@@ -14,6 +14,9 @@ import Color from "./03.03.2021/Color";
 import InputRange from "./03.03.2021/InputRange";
 import Dollar from "./03.03.2021/Dollar";
 import Temp from "./03.03.2021/Temp";
+import FontSize from "./03.03.2021/FontSize";
+import InputColor from "./03.03.2021/InputColor";
+import ColorSliders from "./03.03.2021/ColorSliders";
 
 function App() {
   // const [todos, setTodos] = useState([]);
@@ -57,6 +60,15 @@ function App() {
 
       <h3>Example 5</h3>
       <Temp />
+
+      <h3>Example 6</h3>
+      <FontSize />
+
+      <h3>Example 7</h3>
+      <InputColor />
+
+      <h3>Example 8</h3>
+      <ColorSliders min={0} max={255}/>
     </div>
   );
 }

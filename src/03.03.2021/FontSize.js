@@ -1,16 +1,16 @@
 import { useState } from "react";
 
 function FontSize({value }) {
-    const [name, setName] = useState(value ?? 0);
+    const [size, setSize] = useState(10);
 
     return(
         <div className="Name">
-            <span >Example</span>
+            <span style={{fontSize: size + "px"}}>Example</span>
             <input
-            style={{fontSize}}
+            style={{fontSize: size + "px"}}
              type="number"
-             onInput={(event) => setName(event.target.value)} />
-             <span>={name * 85} </span>
+             value={size}
+             onInput={(event) => setSize(event.target.value)} />
         </div>
     )
 }
