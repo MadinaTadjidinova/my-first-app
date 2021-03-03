@@ -1,13 +1,18 @@
-import React from "react";
+import { useState } from "react"
 
-function  ToDoList({ todos }) {
+function TodoList() {
+    let [list, setList] = useState(["Apple"]);
+    let [li , setLi] = useState('')
     return (
-        <ul className="ToDoList">
-            {todos.map(todo => {
-                <Todo key={todo.id} todo={todo} />
-            })}
-        </ul>
+        <div className="TodoList">
+            <ul><li>{list}</li></ul>
+            <input 
+            type="text" 
+            placeholder="Enter Text"
+            />
+
+            <button>Add</button>
+        </div>
     )
 }
-
-export default ToDoList;
+export default TodoList;

@@ -5,8 +5,11 @@ import Counter from "./01.03.2021/Counter";
 import Name from "./01.03.2021/Name";
 import Text from "./01.03.2021/Text";
 
+import ToDoList from "./home_work/TodoList";
+
 
 function App() {
+
   return (
     <div className="App">
       <Switch />
@@ -15,6 +18,8 @@ function App() {
       <hr />
       <Text />
       <hr />
+      <ToDoList />
+
     </div>
   )
 }
