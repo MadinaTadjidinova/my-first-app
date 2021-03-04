@@ -6,7 +6,7 @@ function Rotate({ value }) {
     <div className="rotate">
       <div
         style={{
-          backgroundColor: "black",
+          backgroundColor: "red",
           width: 100 + "px",
           height: 100 + "px",
           margin: 10 + "px",
