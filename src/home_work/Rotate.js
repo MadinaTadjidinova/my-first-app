@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Rotate({ value }) {
-  const [number, setNumber] = useState(value ?? "");
+  const [rotate, setRotate] = useState(value ?? "");
   return (
     <div className="rotate">
       <div
@@ -10,7 +10,7 @@ function Rotate({ value }) {
           width: 100 + "px",
           height: 100 + "px",
           margin: 10 + "px",
-          transform: `rotate(${number + "deg"})`
+          transform: `rotate(${rotate + "deg"})`,
         }}
       ></div>
       <input
@@ -18,7 +18,7 @@ function Rotate({ value }) {
         min={0}
         max={360}
         value={number}
-        onInput={(event) => setNumber(event.target.value)}
+        onInput={(event) => setRotate(event.target.value)}
       />
     </div>
   );
