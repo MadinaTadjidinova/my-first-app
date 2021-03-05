@@ -21,8 +21,14 @@ import React from "react";
 import Rotate from "./home_work/Rotate";
 import Reverse from "./home_work/Reverse";
 
+import Massive from "./03.03.2021/Massive";
+import List1 from "./03.03.2021/List1";
+
 function App() {
   // const [todos, setTodos] = useState([]);
+
+
+  let list = ["banana", "orange", "lemon"];
 
   return (
     <div className="App">
@@ -78,6 +84,10 @@ function App() {
 
       <h3>home_work2</h3>
       <Reverse />
+
+      <Massive />
+
+     <List1 items={list}/>
     </div>
   );
 }
