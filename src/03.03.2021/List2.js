@@ -1,11 +1,10 @@
-function List2({ items }){
-
+import { React } from "react";
+function List2({item}) {
+    let fruit = item.map(item=>{
+        return <li>{item}</li>
+    })
     return <div>
-        <ul>
-            <li>{items[0]}</li>
-            <li>{items[1]}</li>
-            <li>{items[2]}</li>
-        </ul>
-    </div>   
+        <ul>{fruit}</ul>
+    </div>
 }
 export default List2;

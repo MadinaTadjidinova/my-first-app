@@ -23,12 +23,14 @@ import Reverse from "./home_work/Reverse";
 
 import Massive from "./03.03.2021/Massive";
 import List1 from "./03.03.2021/List1";
-
+import List2 from "./03.03.2021/List2";
 function App() {
   // const [todos, setTodos] = useState([]);
 
 
   let list = ["banana", "orange", "lemon"];
+
+
 
   return (
     <div className="App">
@@ -88,6 +90,8 @@ function App() {
       <Massive />
 
      <List1 items={list}/>
+     
+     <List2 item={list} />
     </div>
   );
 }
