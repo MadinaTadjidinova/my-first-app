@@ -22,8 +22,9 @@ import Rotate from "./home_work/Rotate";
 import Reverse from "./home_work/Reverse";
 
 import Massive from "./03.03.2021/Massive";
-import List1 from "./03.03.2021/List1";
-import List2 from "./03.03.2021/List2";
+import List1 from "./05.03.2021/List1";
+import List2 from "./05.03.2021/List2";
+import AllClassWork from "./05.03.2021/AllClassWork";
 function App() {
   // const [todos, setTodos] = useState([]);
 
@@ -92,6 +93,8 @@ function App() {
      <List1 items={list}/>
      
      <List2 item={list} />
+
+     <AllClassWork />
     </div>
   );
 }
