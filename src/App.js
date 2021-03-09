@@ -25,6 +25,8 @@ import Massive from "./03.03.2021/Massive";
 import List1 from "./05.03.2021/List1";
 import List2 from "./05.03.2021/List2";
 import AllClassWork from "./05.03.2021/AllClassWork";
+
+import Example from "./home_work/09.03.2021/Example";
 function App() {
   // const [todos, setTodos] = useState([]);
 
@@ -95,6 +97,8 @@ function App() {
      <List2 item={list} />
 
      <AllClassWork />
+
+     <Example />
     </div>
   );
 }
