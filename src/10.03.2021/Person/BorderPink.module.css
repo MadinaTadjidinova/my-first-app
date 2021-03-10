@@ -1,0 +1,8 @@
+.BorderPink{
+    margin-left: 10px;
+    width:  100px;
+    height: 50px;
+    border: 2px solid pink;
+    background: rgb(194, 92, 109);
+    
+}

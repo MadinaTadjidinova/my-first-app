@@ -1,0 +1,6 @@
+.Dashed{
+    margin-left: 10px;
+    width:  100px;
+    height: 50px;
+    border: 2px dashed red;
+}

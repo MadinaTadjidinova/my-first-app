@@ -10,3 +10,15 @@
 .age {
     color: tomato;
 }
+
+.name{
+    text-decoration: underline;
+}
+
+.hobby{
+    text-decoration: underline;
+}
+
+.button{
+    width: 20px;
+}
