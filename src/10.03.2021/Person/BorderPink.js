@@ -1,4 +1,4 @@
-import classes from "./Simple_btn.module.css";
+import classes from "./BorderPink.module.css";
 const BorderPink = ({children}) => {
     return ( <div>
         <button className={classes.BorderPink}>{children}</button>
