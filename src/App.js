@@ -12,6 +12,8 @@ import Dashed from "./10.03.2021/Person/Dashed";
 import Dotted from "./10.03.2021/Person/Dotted";
 import Pink from "./10.03.2021/Person/Pink";
 import Deshed1 from "./10.03.2021/Person/Deshed1";
+import Dotted1 from "./10.03.2021/Person/Dotted1";
+
 function App() {
   return (
     <div className="App">
@@ -36,6 +38,7 @@ function App() {
       <Pink>Add</Pink>
 
       <Deshed1>Add</Deshed1>
+      <Dotted1>Add</Dotted1>
     </div>
   );
 }

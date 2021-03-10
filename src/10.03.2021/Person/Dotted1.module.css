@@ -1,0 +1,7 @@
+.Dotted1{
+    margin-left: 10px;
+    width:  100px;
+    height: 50px;
+    border: 20px dotted pink;
+    background-color: red;
+}
