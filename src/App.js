@@ -14,6 +14,8 @@ import Pink from "./10.03.2021/Person/Pink";
 import Deshed1 from "./10.03.2021/Person/Deshed1";
 import Dotted1 from "./10.03.2021/Person/Dotted1";
 
+import PersonList from "./05.03.2021/PersonList/PersonList";
+
 function App() {
   const persons = [
     { name: "Elon Baike", age: 47, hobby: "Ice skating, Eating donuts, Dancing under the moon" },
