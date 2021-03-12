@@ -1,4 +1,4 @@
-import Person from "./13.03.2021/Person/Person";
+import PersonList from "./13.03.2021/PersonList/PersonList";
 
 function App() {
   const persons = [
@@ -26,10 +26,12 @@ function App() {
     { name: "Kutman", role: "Student", wpm: 33, commits: 99 },
     { name: "Chyngyz", role: "Student", wpm: 36, commits: 559 },
   ];
-  const output = persons.map(person => <Person {...person} />);
+
+  const students = persons.filter(person => person.role == "Student");
+  const fast = students.filter(person => person.role )
   return (
     <div className="App">
-      {output}
+      <PersonList persons={fast} />
     </div>
   );
 }
