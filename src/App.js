@@ -1,7 +1,3 @@
-
-import React from "react";
-import './App.css' 
-
 import Person from "./13.03.2021/Person/Person";
 
 function App() {
@@ -38,6 +34,4 @@ function App() {
   );
 }
 export default App;
-
-
 
