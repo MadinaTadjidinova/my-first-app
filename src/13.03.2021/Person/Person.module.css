@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 .Person {
     flex: 1 0 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
@@ -5,9 +7,24 @@
     padding: 15px;
     padding-top: 10px;
     border-radius: 15px;
+
+    font-family: 'Redressed', cursive;
+    background-color: rgba(121, 248, 121, 0.849);
+}
+.img{
+    width: 110px; 
+
+}
+.divimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    position: relative;
+    bottom: 70px;
 }
 
-.img{
-    width: 100px;
-    
+.alldiv{
+    padding-top: 20px;
 }
