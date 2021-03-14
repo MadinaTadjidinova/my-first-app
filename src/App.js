@@ -2,11 +2,11 @@ import PersonList from "./13.03.2021/PersonList/PersonList";
 
 function App() {
   const persons = [
-    { name: "Elaman",  role: "Teacher", wpm: 10, commits: 100 },
+    { name: "Elaman",  role: "Teacher", wpm: 10, commits: 100},
     { name: "Choro", role: "Assistant", wpm: 78, commits: 10401 },
     { name: "Tynchtyk", role: "Teacher", wpm: 102, commits: 0 },
     { name: "Danila", role: "Student", wpm: -5, commits: 1244 },
-    { name: "Madina", img: "https://avatars.githubusercontent.com/u/75364399?s=460&u=bc77810078d496e3dfe66f27906b01f5db7f208b&v=4", role: "Student", wpm: 30, commits: 5000 },
+    { name: "Madina", img: "https://avatars.githubusercontent.com/u/75364399?s=460&u=bc77810078d496e3dfe66f27906b01f5db7f208b&v=4", src: "", role: "Student", wpm: 30, commits: 5000 },
     { name: "Tatyna", role: "Student", wpm: 27, commits: 572541 },
     { name: "Emirlan", img: "https://avatars.githubusercontent.com/u/75364762?s=460&u=1945ae5a1c13d5c73dd12e500b24e1965c06decc&v=4", role: "Student", wpm: 20, commits: 56566 },
     { name: "Baitemir", img: "https://avatars.githubusercontent.com/u/65547734?s=460&u=7fc2c86db4a7a0feaef6f973739812aa62546604&v=4", role: "Student", wpm: 35, commits: 556 },
