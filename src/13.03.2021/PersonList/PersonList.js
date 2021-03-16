@@ -1,7 +1,7 @@
 import Person from "../Person/Person";
 import classes from "./PersonList.module.css";
 
-const PersonList = ({ persons, filterStudents, filterWPM, filterCommits }) => {
+const PersonList = ({ persons, filterStudents, filterWPM, filterCommits, filterWordA }) => {
   // Dlinnyi
   let students = persons;
   if (filterStudents) {
@@ -18,6 +18,12 @@ const PersonList = ({ persons, filterStudents, filterWPM, filterCommits }) => {
   let commits = wpm;
   if (filterCommits) {
     commits = students.filter(person => person.commits > 999);
+  }
+
+
+  let name = persons;
+  if(filterWordA){
+      name = persons.sort((a, b) => (a.name > b.name) ? "A" : "A")
   }
 
   return (
