@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.Logo {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+
+  }
+  .Logo img {
+    width: 150px;
+    height: 100PX;
+  }
+
+  .Logo div {
+    font: 700 2.5rem Syne Mono, monospace;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: rgb(139, 17, 17) ;     
+}
