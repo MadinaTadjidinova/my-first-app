@@ -1,6 +1,5 @@
+
 .App {
-    display: flex;
-}
-.highlight {
-    background-color: yellow;
+    color: white;
+    z-index: 7;
 }

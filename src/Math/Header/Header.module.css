@@ -4,6 +4,15 @@
 }
 .Header img {
     background-size: cover;
-    width: 800px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
+    margin-top: 30px;
+}
+
+@media (max-width: 690px){
+    .Header img{
+        margin-top: 10px;
+        width: 400px;
+        height: 300px;
+    }
 }
