@@ -206,6 +206,7 @@
 
 import { useState } from "react";
 import Countdown from "./Math/Countdown/Countdown";
+import Header from "./Math/Header/Header";
 import Logo from "./Math/Logo/Logo";
 const App = () => {
   const [a, setA] = useState(randomNumber(50));
@@ -251,7 +252,7 @@ const App = () => {
   return (
     <div className="App">
 <Logo />
-
+<Header />
       {a} + {b} - {c}= {answer} <br />
       {a1} * {b1} = {answer1}
       <Countdown countdown={countdown} setCountdown={setCountdown} />
