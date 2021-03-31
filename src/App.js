@@ -203,67 +203,87 @@
 // }
 
 // export default App;
-
-import "./App.css";
+import "./App.css"
 import { useState } from "react";
 import Countdown from "./Math/Countdown/Countdown";
 import Header from "./Math/Header/Header";
 import Logo from "./Math/Logo/Logo";
 const App = () => {
-  // const [a, setA] = useState(randomNumber(50));
-  // const [b, setB] = useState(randomNumber(50));
-  // const [c, setC] = useState(randomNumber(50));
+  const [a, setA] = useState(randomNumber(50));
+  const [b, setB] = useState(randomNumber(50));
+  const [c, setC] = useState(randomNumber(50));
 
-  // const [a1, setA1] = useState(randomNumber(50));
-  // const [b1, setB1] = useState(randomNumber(50));
+  const [a1, setA1] = useState(randomNumber(50));
+  const [b1, setB1] = useState(randomNumber(50));
+
+  const [a2, setA2] = useState(randomNumber(50));
+  const [b2, setB2] = useState(randomNumber(50));
 
 
-  // const [answer, setAnswer] = useState("?");
-  // const [answer1, setAnswer1] = useState("?");
-  // const [countdown, setCountdown] = useState(20);
-  // function randomNumber(limit) {
-  //   return Math.round(Math.random() * limit);
-  // }
-  // function checkAnswer() {
-  //   const result = a + b - c;
-  //   if (result == answer) {
-  //     setA(randomNumber(50));
-  //     setB(randomNumber(50));
-  //     setC(randomNumber(50));
+  const [answer, setAnswer] = useState("?");
+  const [answer1, setAnswer1] = useState("?");
+  const [answer2, setAnswer2] = useState("?");
 
-  //     setAnswer("?");
-  //     setCountdown(20);
-  //   }
-  //        else {
-  //     alert("Wrong");
-  //   }
-  //   const result1 = a1 * b1;
-  //   if (result1 == answer1){
-  //     setA1(randomNumber(30));
-  //     setB1(randomNumber(30));
+  const [countdown, setCountdown] = useState(20);
 
-  //     setAnswer1("?");
-  //     setCountdown(20);
-  //   }
-  //   else {
-  //     alert("Wrong1");
-  //   }
+  function randomNumber(limit) {
+    return Math.round(Math.random() * limit);
+  }
+  function checkAnswer() {
+    const result = a + b - c;
+    if (result == answer) {
+      setA(randomNumber(50));
+      setB(randomNumber(50));
+      setC(randomNumber(50));
 
-  // }
+      setAnswer("?");
+      setCountdown(20);
+    }
+         else {
+      alert("Wrong");
+    }
+    
+    const result1 = a1 * b1;
+    if (result1 == answer1){
+      setA1(randomNumber(30));
+      setB1(randomNumber(30));
+
+      setAnswer1("?");
+      setCountdown(20);
+    }
+    else {
+      alert("Wrong1");
+    }
+
+    const result2 = a2 ** b2;
+    if(result2 == answer2){
+      setA2(randomNumber(20 * 2));
+      setB2(randomNumber(20 * 2));
+
+      setAnswer2("?");
+      setCountdown(20);
+    }
+    else {
+      alert("Wrong2");
+    }
+  }
   return (
     <div className="App">
 <Logo />
-{/* 
-  {a} + {b} - {c}= {answer} <br />
-      {a1} * {b1} = {answer1}
-      <Countdown countdown={countdown} setCountdown={setCountdown} />
-      <input type="number" value={answer} onChange={({ target }) => setAnswer(target.value)} /> <br />
-      <input type="number" value={answer1} onChange={({ target }) => setAnswer1(target.value)} />
-      <button onClick={() => checkAnswer()}>Ok</button> */}
-
-  
 <Header />
-     
+      {a} + {b} - {c}= {answer} <br />
+      <input type="number" value={answer} onChange={({ target }) => setAnswer(target.value)} /> <br />
+      <Countdown countdown={countdown} setCountdown={setCountdown} />
+
+      {a1} * {b1} = {answer1} <br />
+      <input type="number" value={answer1} onChange={({ target }) => setAnswer1(target.value)} />
+      <Countdown countdown={countdown} setCountdown={setCountdown} />
+
+      {a1} ** {b1} = {answer2} <br />
+      <input type="number" value={answer2} onChange={({ target }) => setAnswer2(target.value)} />
+      <Countdown countdown={countdown} setCountdown={setCountdown} />
+
+      <button onClick={() => checkAnswer()}>Check</button>
     </div>
   );
 
